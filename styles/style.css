@@ -1,0 +1,153 @@
+* :not(title){
+  display:block;
+}
+
+html{
+  padding:0px;
+  margin:0px;
+  font-family:"Roboto", sans-serif;
+}
+body{
+  width:100%;
+  padding:0px;
+  margin:0px;
+  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+  url("../images/background.jpg");
+}
+
+.top_nav{
+  height:40px;
+  
+  background-color:rgb(230,230,230);
+}
+.top_nav *{
+  display:inline-block;
+  text-decoration:none;
+  color:black;
+  padding-top:5px;
+}
+.left_nav{
+  float:left;
+  padding-left:10px;
+}
+.right_nav{
+  float:right;
+  padding-right:10px;
+}
+.right_nav a{
+  margin-right:10px;
+}
+.wrapper{
+  padding:0px;
+  margin:0px;
+}
+header{
+  width:100%;
+  padding:0px;
+  height:100px;
+  margin:0 auto;
+  margin-top:0px;
+  text-align:center;
+  
+  box-sizing:border-box;
+  background:linear-gradient(rgba(0,0,0,.66),rgba(0,0,0,.7));
+  
+  overflow:hidden;
+  box-shadow:0px 5px 15px 0px rgba(0,0,0,.3),inset 0px 0px 2px black;
+  position:relative;
+  z-index:2;
+}
+header img{
+  
+  box-shadow: 0px 0px 50px 50px black;
+  float:left;
+}
+header h1{
+  font-size:40px;
+  padding-top:-10px;
+  float:top;
+  color:white;
+  text-shadow:2px 2px black;
+  
+}
+.main{
+  width:100%;
+  padding:5px;
+  box-sizing:border-box;
+  position:relative;
+  z-index:1;
+  background-color:white;
+  overflow:auto;
+}
+.language_preview{
+  float:left;
+  text-align:left;
+  padding:0px 10px 0px 10px;
+  height:400px;
+  width:200px;
+  background-color:rgb(230,230,230);
+  box-shadow:inset 3px 2px 10px 3px rgba(0,0,0,.2);
+}
+ul{
+  list-style-type:none;
+  padding:0px 10px 0px 10px;
+  box-sizing:border-box;
+  width:100%;
+  color:black;
+  
+}
+ul h2{
+  text-align:center;
+}
+.right{
+  width:50%;
+  padding-left:20px;
+  margin-left:210px;
+  
+}
+.left{
+  
+}
+footer{
+  width:100%;
+  background-color:rgb(230,230,230);
+  overflow:auto;
+  
+}
+footer *{
+  display:inline-block;
+}
+footer a{
+  margin-top:20px;
+}
+footer p{
+  font-size:12px;
+  float:right;
+  margin-right:20px;
+  margin-top:25px;
+}
+footer img{
+  width:150px;
+  margin:10px;
+  float:left;
+  padding:2px;
+  background-color:black;
+  border:4px solid white;
+  
+}
+@media(max-width:1300px){
+  
+}
+@media(min-width: 1300px){
+  .left_nav{
+    padding-left:40px;
+  }
+  .right_nav{
+    padding-right:40px;
+  }
+  
+  .wrapper{
+    width:1300px;
+    margin:0 auto;
+  }
+}
