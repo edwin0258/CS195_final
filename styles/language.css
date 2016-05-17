@@ -16,21 +16,37 @@ samp{
     width:60%;
     padding:10px;
     margin-top:40px;
+    background-color:white;
+    box-shadow:5px 5px 10px rgba(0,0,0,.2), inset 0px 0px 10px 0px rgba(200,200,200,.2);
 }
 .right{
     position:absolute;
     
     right:0;
 }
-.information{
+.information,.alert{
+    
     margin-right:50px;
-    margin-top:25px;
+    margin-top:75px;
     width:200px;
     background-color:rgb(240,240,240);
     box-shadow:4px 4px 10px rgba(0,0,0,.2);
     border:1px black solid;
     text-align:center;
     
+}
+.alert{
+    font-size:14px;
+    font-weight:bold;
+    text-decoration:none;
+    background: -webkit-radial-gradient(bottom left,rgba(193,39,45,1),rgba(193,39,45,.8),rgba(193,39,45,.7));
+    background: radial-gradient(at bottom left,rgba(193,39,45,1),rgba(193,39,45,.8),rgba(193,39,45,.5));
+}
+.alert:hover{
+    background:rgba(193,39,45,.5);
+}
+.alert:hover img{
+    opacity:.6;
 }
 .image_container{
     box-shadow:0px 4px 10px rgba(0,0,0,.2);

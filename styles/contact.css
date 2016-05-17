@@ -1,0 +1,17 @@
+.main .contact_container{
+    display:inline-block;
+    
+}
+.contact_info{
+    width:calc(403px * 3);
+    margin:0 auto;
+    margin-top:50px;
+   
+    background-color:blue;
+}
+.contact_container{
+    width:400px;
+    height:300px;
+    position:relative;
+    background-color:rgb(240,240,240);
+}
