@@ -20,8 +20,7 @@ body{
   display:inline-block;
   text-decoration:none;
   padding-top:10px;
-  -webkit-transition:4s all;
-  transition:4s all;
+  
 }
 a:link{
   color:black;
