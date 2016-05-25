@@ -1,4 +1,6 @@
-
+.main{
+    word-wrap:break-word;
+}
 pre{
     background-color:rgba(240,240,240,.9);
     width:300px;
@@ -20,13 +22,10 @@ samp{
     box-shadow:5px 5px 10px rgba(0,0,0,.2), inset 0px 0px 10px 0px rgba(200,200,200,.2);
 }
 .right{
-    position:absolute;
-    
-    right:0;
+    float:right;
 }
 
 .information,.alert{
-    
     margin-right:50px;
     margin-top:75px;
     width:200px;
@@ -39,9 +38,15 @@ samp{
 .alert{
     font-size:14px;
     font-weight:bold;
-    text-decoration:none;
+    position:relative;
+    display:block;
     background: -webkit-radial-gradient(bottom left,rgba(193,39,45,1),rgba(193,39,45,.8),rgba(193,39,45,.7));
     background: radial-gradient(at bottom left,rgba(193,39,45,1),rgba(193,39,45,.8),rgba(193,39,45,.5));
+}
+.alert p{
+    /* strange fix for underline under p */
+    display:inline-block;
+    color:white;
 }
 .alert:hover{
     background:rgba(193,39,45,.5);
@@ -56,24 +61,50 @@ samp{
     background-color:rgb(237,237,237);
 }
 
-.resources :not(h2){
-    margin-left:20px;
-}
+
 p{
     text-indent:10px;
 }
 ul{
     list-style-type:none;
-    
+    text-indent:none;
     text-align:left;
+    margin-left:-40px;
 }
-li b{
-    padding-right:5px;
-    font-size:12px;
+.mobile{display:none;}
+@media only screen and (max-width: 900px){
+    .resources{
+        clear:right;
+        margin:0;
+        padding:10px;
+        width:calc(100% - 20px);
+        
+    }
+    .right{
+        float:none;
+        width:100%;
+        
+    }
+    .information, .alert{
+        margin:10px;
+        width:calc(50% - 30px);
+        height:100%;
+        position:relative;
+        display:inline-block;
+    }
 }
-ul li{
-    margin-left:-30px;
-    font-size:14px;
-    margin-bottom:10px;
-    font-weight:300;
+@media only screen and (max-width: 580px){
+    pre{
+        width:calc(100% - 10px);
+    }
+    .information, .alert{
+        width:calc(100% - 30px);
+        display:block;
+    }
+    iframe{
+        display:none;
+    }
+    .mobile{
+        display:block;
+    }
 }
