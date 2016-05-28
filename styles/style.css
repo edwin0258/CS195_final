@@ -79,7 +79,8 @@ header h1{
   position:relative;
   z-index:1;
   background-color:white;
-  overflow:auto;
+  overflow-y:auto;
+  overflow-x:hidden;
 }
 footer{
   width:100%;
