@@ -39,7 +39,7 @@ samp{
 .links{
     margin-left:10px;
     background-color:rgba(255,105,97,.3);
-    
+    background:white;
 }
 .right{
     float:right;
@@ -50,11 +50,12 @@ samp{
     margin-top:75px;
     width:200px;
     background-color:rgb(240,240,240);
-    box-shadow:4px 4px 10px rgba(0,0,0,.2);
+    box-shadow:4px 4px 10px rgba(0,0,0,.2), 0px 0px 0px 10px rgba(100,100,100,.1);
     border:1px black solid;
     text-align:center;
     
 }
+/* Alert card (Commenting and questions call to action)  */
 .alert{
     font-size:14px;
     font-weight:bold;
@@ -74,12 +75,25 @@ samp{
 .alert:hover img{
     opacity:.6;
 }
+/* Information card */
 .image_container{
     box-shadow:0px 4px 10px rgba(0,0,0,.2);
+    border-bottom:5px solid rgba(200,200,200,.3);
     padding-top:10px;
     padding-bottom:10px;
     background-color:rgb(237,237,237);
 }
+.information li{
+    margin:10px;
+    line-height:28px;
+    
+}
+.information b{
+    padding:2px;
+    margin-right:10px;
+    box-shadow:1px 1px 3px rgba(0,0,0,.2);
+}
+
 
 
 p{
