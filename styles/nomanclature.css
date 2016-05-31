@@ -31,14 +31,19 @@ tfoot{
     padding:10px 0px;
     background-color:rgb(200,200,200);
     margin:20px 0px;
+    box-shadow:2px 2px rgba(0,0,0,.2);
 }
 .languages h2{
     text-align:center;
 }
 .languages a{
-    background-color:grey;
+    background-color:white;
+    border:1px solid black;
     padding:5px;
     margin:5px;
+}
+.languages li{
+    display:inline-block;
     margin-bottom:20px;
 }
 @media only screen and (max-width: 430px){

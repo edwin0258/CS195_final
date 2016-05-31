@@ -16,7 +16,7 @@ $(document).ready(function(){
         $(".top_nav").toggle(300);
         
     })
-    $(".language").each(function(){
+    $(".language a").each(function(){
         var color = colors[Math.floor(Math.random()*colors.length)];
         $(this).css({"border-top-color": color});
         $(this).on("mouseover", function(){

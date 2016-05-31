@@ -46,7 +46,7 @@
   
   padding:0px 0px 0px 0px;
 }
-.popular .language{
+.language a{
   border-top:5px solid;
   background-color:white;
   margin-bottom:10px;
