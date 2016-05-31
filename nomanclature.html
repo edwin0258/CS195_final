@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="author" content="Devin Miller"/>
+  <title>HelloWorld</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles/nomanclature.css"/>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+  <!-- [if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+  <![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/language.js"></script>
+</head>
+<body>
+  <button class="nav_button"><img src="images/bars.png" alt="nav opening button" height="40"/></button>
+  <nav class="top_nav">
+    <div class="left_nav">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="right_nav">
+      <a href="nomanclature.html">Basic Nomanclature</a>
+      <a href="repository.html">Language Repository</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <div class="wrapper">
+    <header>
+      <h1>Nomanclature</h1>
+    </header>
+    <div class="main">
+        <div class="languages">
+          <h2>Navigate to Language</h2>
+          <!-- make a ul -->
+          <a href="#javascript">Javascript</a>
+          <a href="#scheme">Scheme</a>
+        </div>
+        <!-- JavasScript  -->
+        <table id="javascript">
+          <thead>
+            <th>Javascript</th>
+          </thead>
+          <tr>
+          <td>
+          <table>
+            <thead>
+              <th>Convention</th>
+              <th>Example</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Always put spaces around operators ( = + - * / )</td>
+                <td>var x = y + z;</td>
+              </tr>
+              <tr>
+                <td>Always end a simple statement with a semicolon.</td>
+                <td>var values = ["Volvo", "Saab", "Fiat"];</td>
+              </tr>
+              <tr>
+                  <td>
+                  <ul>
+                    <li>Put the opening bracket at the end of the first line.</li>
+                    <li>Use one space before the opening bracket.</li>
+                    <li>Put the closing bracket on a new line, without leading spaces.</li>
+                    <li>Do not end a complex statement with a semicolon.</li>
+                  </ul>
+                  </td>
+                  <td>
+                      For Functions, loops, conditionals.
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">For readability, avoid lines longer than 80 characters.</td>
+              </tr>
+              <tr>
+                  <td colspan="2">use camelCase for identifier names (variables and functions).</td>
+              </tr>
+              <tr>
+                  <td colspan="2">All names start with a letter.</td>
+              </tr>
+              <tfoot>
+                  <td colspan="2">Courtesy of w3schools, <a href="http://www.w3schools.com/js/js_conventions.asp">
+                    http://www.w3schools.com/js/js_conventions.asp</a></td>
+              </tfoot>
+            </tbody>
+          </table>
+          </td>
+          </tr>
+        </table>
+        
+        <!-- Scheme -->
+        <table id="scheme">
+          <thead>
+            <th>Scheme</th>
+          </thead>
+          <tr>
+          <td>
+          <table>
+            <thead>
+              <th>Convention</th>
+              <th>Example</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Predicate names end in a question mark ( ? )</td>
+                <td>eq?, zero?, and string=?. The common numeric comparators =, <, >, <=, and >= are exceptions to this rule.</td>
+              </tr>
+              <tr>
+                <td>The names of most character, string, and vector procedures start with the prefix char "-".</td>
+                <td>string-append</td>
+              </tr>
+              <tr>
+                  <td>
+                      <h2>Identifiers may be formed with</h2>
+                  <ul>
+                    <li>the lowercase letters a through z</li>
+                    <li>the uppercase letters A through Z</li>
+                    <li>the digits 0 through 9</li>
+                    <li>the characters ? ! . + - * / < = > : $ % ^ & _ ~</li>
+                  </ul>
+                  </td>
+                  <td>
+                      hi, Hello, n, x, x3, and ?$&*!!! are all identifiers
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">Keywords, variables, and symbols are collectively called identifiers.</td>
+              </tr>
+              <tr>
+                  <td>Structured forms and list constants are enclosed within parentheses</td>
+                  <td>(a b c) or (* (- x 2) y)</td>
+              </tr>
+              <tr>
+                  <td colspan="2">The boolean values representing true and false are written as #t and #f. Scheme
+                  conditional expressions actually treat #f as false and all other objects as true.</td>
+              </tr>
+              <tr>
+                  <td>Vectors are written similarly to lists, except that they are preceded by #( and terminated by )</td>
+                  <td>#(this is a vector of symbols)</td>
+              </tr>
+              <tr>
+                 <td colspan="2">Strings are enclosed in double quotation marks</td> 
+              </tr>
+              <tr>
+                  <td>Characters are preceded by #\</td>
+                  <td>#\a</td>
+              </tr>
+              <tr>
+                  <td colspan="2">Comments may appear on any line of a Scheme program, between a semicolon ( ; ) and the end of the line</td>
+              </tr>
+              <tfoot>
+                  <td colspan="2">Courtesy of scheme.com, <a href="http://www.scheme.com/tspl2d/intro.html">
+                    http://www.scheme.com/tspl2d/intro.html</a></td>
+              </tfoot>
+            </tbody>
+          </table>
+          </td>
+          </tr>
+        </table>
+        
+    </div>
+    <footer>
+      <img src="images/logo.png" alt="Hello World Logo"/>
+      <a href="index.html">Home</a>
+      <a href="nomanclature.html">Basic Nomanclature</a>
+      <a href="repository.html">Language Repository</a>
+      <a href="contact.html">Contact</a>
+      <p>
+        <i>Copyright &copy; 2016 Hello World</i>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

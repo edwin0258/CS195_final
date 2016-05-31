@@ -47,7 +47,7 @@ h2{
   bottom:0;
   padding-bottom:30px;
   border-top:10px solid #FF6961;
-  margin-left:calc(20vw + 60px);
+  margin-left:calc(20vw + 70px);
   
   text-align:center;
   background-color:rgba(0,0,0,.04);
@@ -57,7 +57,7 @@ h2{
 }
 textarea{
   width:80%;
-  box-shadow:0px 0px 0px 5px rgba(255,105,97,.5);
+  border:2px solid rgba(0,0,0,.4);
 }
 
 .button{
@@ -110,23 +110,32 @@ textarea{
   .images{
     display:none;
   }
+  .contact_info{
+    width:50%;
+  }
+  .comment{
+    width:50%;
+    margin-left:50%;
+  }
 }
 @media only screen and (max-width: 850px){
   
   .contact_info{
     overflow:hidden;
-    width:calc(100%);
+    width:100%;
   }
   .comment{
     position:relative;
     margin:0;
     padding:0;
+    padding-bottom:20px;
+    width:100%;
     clear:left;
     text-align:left;
+    
   }
   .button{
-    float:none;
-    margin-right:0;
+    margin:0 auto;
     width:5em;
     padding:10px;
   }

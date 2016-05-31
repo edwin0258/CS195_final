@@ -10,6 +10,9 @@ body{
   background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
   url("../images/background.jpg");
 }
+a{
+    text-decoration:none;
+}
 .nav_button{
   cursor:pointer;
   background:none;
@@ -27,7 +30,8 @@ body{
   
 }
 .language{
-  box-shadow:5px 5px rgba(0,0,0,.1);
+  box-shadow:5px 5px rgba(0,0,0,.1
+  );
 }
 a:link{
   color:black;
@@ -58,7 +62,6 @@ header{
   margin:0 auto;
   margin-top:0px;
   text-align:center;
-  
   box-sizing:border-box;
   background:linear-gradient(rgba(0,0,0,.66),rgba(0,0,0,.7));
   
@@ -70,7 +73,6 @@ header{
 header h1{
   font-size:40px;
   padding-top:-10px;
-  float:top;
   color:white;
   text-shadow:2px 2px black;
   
@@ -91,10 +93,9 @@ footer{
   overflow:auto;
   position:relative;
 }
-footer *{
-  display:inline-block;
-}
+
 footer a{
+  display:inline-block;
   margin-top:20px;
   margin-left:10px;
   font-size:14px;
@@ -113,7 +114,6 @@ footer img{
   padding:2px;
   background-color:black;
   border:4px solid white;
-  
 }
 
 @media only screen and (min-width: 1300px){
@@ -188,7 +188,7 @@ footer img{
     display:block;
     float:left;
   }
-  footer *{
+  footer a{
     clear:both;
   }
 }

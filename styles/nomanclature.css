@@ -1,0 +1,48 @@
+/* Table */
+table{
+    width:100%;
+    border:1px solid black;
+    box-shadow:2px 2px rgba(0,0,0,.4);
+    margin-bottom:10px;
+}
+caption{
+    border:1px solid black;
+    background-color:#DDDDDD;
+}
+thead{
+    background-color:#DDDDDD;
+}
+tbody{
+    background-color:#EFEFEF;
+}
+th{
+    width:50%;
+}
+td{
+    padding:10px;
+    border:1px solid rgba(0,0,0,.3);
+}
+tfoot{
+    text-align:center;
+}
+.languages{
+    width:100%;
+    border:1px solid black;
+    padding:10px 0px;
+    background-color:rgb(200,200,200);
+    margin:20px 0px;
+}
+.languages h2{
+    text-align:center;
+}
+.languages a{
+    background-color:grey;
+    padding:5px;
+    margin:5px;
+    margin-bottom:20px;
+}
+@media only screen and (max-width: 430px){
+    .main{
+        overflow-x:scroll !important;
+    }
+}

@@ -1,9 +1,8 @@
 var colors = ["#5BC0EB","#FDE74C","#9BC53D","#E55934","#FA7921"  , "#FFBF00","#E83F6F","#2274A5","#32936F","#BBBBBB"];
-var link_colors = ["#5BC0EB","#FDE74C","#9BC53D","#E55934","#FA7921"]
+var link_colors = ["#5BC0EB","#FDE74C","#9BC53D","#E55934","#FA7921"];
 
 $(document).ready(function(){
     var color = link_colors[Math.floor(Math.random()*link_colors.length)];
-    var width = 0;
     $("header h1").hide();
     $("header h1").fadeIn("slow");
     setInterval(editNavbar,100);

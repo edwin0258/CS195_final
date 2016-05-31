@@ -55,7 +55,8 @@ samp{
     text-align:center;
     
 }
-/* Alert card (Commenting and questions call to action)  */
+
+/* Alert card */
 .alert{
     font-size:14px;
     font-weight:bold;
@@ -75,6 +76,7 @@ samp{
 .alert:hover img{
     opacity:.6;
 }
+
 /* Information card */
 .image_container{
     box-shadow:0px 4px 10px rgba(0,0,0,.2);
@@ -82,6 +84,9 @@ samp{
     padding-top:10px;
     padding-bottom:10px;
     background-color:rgb(237,237,237);
+}
+.information ul{
+    list-style-type:none;
 }
 .information li{
     margin:10px;
@@ -95,17 +100,22 @@ samp{
 }
 
 
-
-p{
-    text-indent:10px;
-}
+/* Resources */
 ul{
-    list-style-type:none;
+    list-style-type:circle;
     text-indent:none;
     text-align:left;
-    margin-left:-40px;
+    margin:0;
+    padding:0;
 }
+.resources li{
+    margin:10px;
+    
+}
+
 .mobile{display:none;}
+
+
 @media only screen and (max-width: 900px){
     .resources{
         clear:right;
@@ -126,7 +136,13 @@ ul{
         position:relative;
         display:inline-block;
     }
+    table{
+        float:none;
+        width:100%;
+    }
 }
+
+
 @media only screen and (max-width: 580px){
     pre{
         width:calc(100% - 10px);
@@ -141,4 +157,5 @@ ul{
     .mobile{
         display:block;
     }
+    
 }
