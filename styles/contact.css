@@ -1,3 +1,6 @@
+@charset "utf-8";
+/* Author: Devin Miller */
+
 .main .contact_info, .main .contact_container{
   display:inline-block;
   overflow:hidden;

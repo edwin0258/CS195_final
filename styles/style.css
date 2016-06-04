@@ -1,23 +1,38 @@
+@charset "utf-8";
+/* Author: Devin Miller */
+
 html{
-  padding:0px;
-  margin:0px;
   font-family:"Open Sans", sans-serif;
 }
+
 body{
   width:100%;
   padding:0px;
   margin:0px;
   background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
-  url("../images/background.jpg");
+  url("../images/background.jpg") rgb(0,0,0);
 }
+
 a{
-    text-decoration:none;
+  text-decoration:none;
 }
+
+h1{
+  font-size:40px;
+  padding-top:-10px;
+  color:white;
+  text-shadow:2px 2px black;
+}
+
 .nav_button{
   cursor:pointer;
   background:none;
+  border:none;
+  color:white;
+  font-size:20px;
   display:none;
 }
+
 .top_nav{
   height:40px;
   background-color:rgb(230,230,230);
@@ -25,14 +40,13 @@ a{
 }
 .top_nav a{
   display:inline-block;
-  text-decoration:none;
   padding-top:10px;
-  
 }
+
 .language{
-  box-shadow:5px 5px rgba(0,0,0,.1
-  );
+  box-shadow:5px 5px rgba(0,0,0,.1);
 }
+
 a:link{
   color:black;
 }
@@ -55,57 +69,43 @@ a:hover{
 .right_nav a{
   margin-right:10px;
 }
+
 header{
   width:100%;
-  padding:0px;
   height:100px;
-  margin:0 auto;
-  margin-top:0px;
   text-align:center;
-  box-sizing:border-box;
   background:linear-gradient(rgba(0,0,0,.66),rgba(0,0,0,.7));
-  
   overflow:hidden;
   box-shadow:0px 5px 15px 0px rgba(0,0,0,.3),inset 0px 0px 2px black;
-  position:relative;
-  z-index:2;
 }
-header h1{
-  font-size:40px;
-  padding-top:-10px;
-  color:white;
-  text-shadow:2px 2px black;
-  
-}
+
+
 .main{
-  width:100%;
   padding:5px;
-  box-sizing:border-box;
   position:relative;
   z-index:1;
   background-color:white;
-  overflow-y:auto;
   overflow-x:hidden;
+  word-wrap:break-word;
 }
+
 footer{
   width:100%;
   background:linear-gradient(rgb(230,230,230),rgba(220,220,220,.5));
   overflow:auto;
-  position:relative;
 }
 
 footer a{
   display:inline-block;
-  margin-top:20px;
-  margin-left:10px;
+  margin:20px 0px 0px 10px;
   font-size:14px;
 }
+
 footer p{
   font-size:12px;
   float:right;
   font-weight:300;
-  margin-right:20px;
-  margin-top:22px;
+  margin:22px 20px 0px 0px;
 }
 footer img{
   width:150px;
@@ -132,6 +132,7 @@ footer img{
     margin:0 auto;
   }
 }
+
 @media only screen and (max-width: 850px){
   .top_nav{
     height:20px;
@@ -146,11 +147,6 @@ footer img{
     background:white;
     overflow:hidden;
   }
-  
-  footer *{
-    
-    float:left;
-  }
 }
 
 @media only screen and (max-width: 580px){
@@ -158,22 +154,22 @@ footer img{
     background-image:none;
     background-color:rgba(0,0,0,.3);
   }
+  header{
+    height:auto;
+  }
   .nav_button{
     display:block;
   }
   .top_nav{
     height:auto;
-    position:fixed;
     z-index:10;
     overflow-x:hidden;
     display:none;
   }
   .top_nav a{
     background:none;
-    padding:0;
     margin:0;
     display:block;
-    width:auto;
     padding:10px;
     background-color:rgba(100,100,100,.5);
     border-bottom:2px solid rgba(0,0,0,.3);

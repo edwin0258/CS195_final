@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="author" content="Devin Miller"/>
-  <title>HelloWorld</title>
+  <title>Basic Nomanclature</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="styles/nomanclature.css"/>
   <link rel="stylesheet" href="styles/style.css"/>
@@ -15,10 +15,10 @@
     </script>
   <![endif]-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script type="text/javascript" src="scripts/language.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 <body>
-  <button class="nav_button"><img src="images/bars.png" alt="nav opening button" height="40"/></button>
+  
   <nav class="top_nav">
     <div class="left_nav">
       <a href="index.html">Home</a>
@@ -29,21 +29,96 @@
       <a href="contact.html">Contact</a>
     </div>
   </nav>
+  
   <div class="wrapper">
+    
     <header>
+      <button class="nav_button">&#9776; Menu</button>
       <h1>Nomanclature</h1>
     </header>
+    
     <div class="main">
-        <div class="languages">
+      
+        <!-- navigation for page -->
+        <nav class="languages">
           <h2>Navigate to Language</h2>
-          <!-- make a ul -->
           <ul>
+            <li><a href="#c">c</a></li>
             <li><a href="#javascript">Javascript</a></li>
+            <li><a href="#java">Java</a></li>
             <li><a href="#scheme">Scheme</a></li>
+            <li><a href="#ruby">Ruby</a></li>
+            <li><a href="#python">Python</a></li>
           </ul>
+        </nav>
+        
+        <!-- About -->
+        <div class="about">
+          <h2>About</h2>
+          <p>Each language has conventions and styling guilds,
+          this is a place mainly to find a good resource for the styling,
+          naming, and other conventions for a language.</p>
         </div>
-        <!-- JavasScript  -->
-        <table id="javascript">
+        <!-- C -->
+         <table id="c" class="outer_table">
+          <thead>
+            <th>C</th>
+          </thead>
+          <tr>
+          <td>
+          <table>
+            <thead>
+              <th>Convention</th>
+              <th>Example</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The "pointer" qualifier, '*', should be with the variable name rather than with the type.</td>
+                <td>char  *s, *t, *u;</td>
+              </tr>
+              <tr>
+                <td>Comments that describe data structures, algorithms, etc., should be in block comment form with the opening /*</td>
+                <!--<td><pre><code>
+   /*
+    * Here is a block comment.
+    * The comment text should be tabbed or spaced over uniformly.
+    * The opening slash-star and closing star-slash are alone on a line.
+    */</code></pre></td>-->
+              </tr>
+              <tr>
+                  <td>
+                  <ul>
+                    <li>Put the opening bracket at the end of the first line.</li>
+                    <li>Use one space before the opening bracket.</li>
+                    <li>Put the closing bracket on a new line, without leading spaces.</li>
+                    <li>Do not end a complex statement with a semicolon.</li>
+                  </ul>
+                  </td>
+                  <td>
+                      For Functions, loops, conditionals.
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">For readability, avoid lines longer than 80 characters.</td>
+              </tr>
+              <tr>
+                  <td colspan="2">use camelCase for identifier names (variables and functions).</td>
+              </tr>
+              <tr>
+                  <td colspan="2">All names start with a letter.</td>
+              </tr>
+              <tfoot>
+                  <td colspan="2">Courtesy of w3schools, <a href="https://www.doc.ic.ac.uk/lab/cplus/cstyle.html">
+                    https://www.doc.ic.ac.uk/lab/cplus/cstyle.html</a></td>
+              </tfoot>
+            </tbody>
+          </table>
+          </td>
+          </tr>
+        </table>
+        
+        <!-- JavaScript  -->
+        <table id="javascript" class="outer_table">
           <thead>
             <th>Javascript</th>
           </thead>
@@ -95,8 +170,81 @@
           </tr>
         </table>
         
+        <!-- Java -->
+        <table id="java" class="outer_table">
+          <thead>
+            <th>Java</th>
+          </thead>
+          <tr>
+          <td>
+          <table>
+            <thead>
+              <th>Convention</th>
+              <th>Example</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><p>When an expression will not fit on a single line,
+                break it according to these general principles:</p>
+                <ul>
+                  <li>Break after a comma.</li>
+                  <li>Break before an operator.</li>
+                </ul>
+                </td>
+                <td>someMethod(longExpression1, longExpression2, longExpression3, 
+        longExpression4, longExpression5);</td>
+              </tr>
+              <tr>
+                <td>Always end a simple statement with a semicolon.</td>
+                <td>The // comment delimiter can comment out a complete line or only a partial line.</td>
+              </tr>
+              <tr>
+                  <td>
+                    A return statement with a value should not use parentheses
+                    unless they make the return value more obvious in some way.
+                  </td>
+                  <td>
+                      <ul>
+                        <li>return;</li>
+                        <li>return myDisk.size();</li>
+                        <li>return (size ? size : defaultSize);</li>
+                      </ul>
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">A block comment should be preceded by a blank line to set it apart from the rest of the code.</td>
+              </tr>
+              <tr>
+                  <td colspan="2">Put declarations only at the beginning of blocks.</td>
+              </tr>
+              <tr>
+                  <td colspan=>Class names should be nouns, in mixed case with the first letter of each internal word capitalized.</td>
+                  <td>class ImageSprite;</td>
+              </tr>
+              <tr>
+                <td>Methods should be verbs, in mixed case with the
+                first letter lowercase, with the first letter of each internal word capitalized.</td>
+                <td>getBackground();</td>
+              </tr>
+              <tr>
+                <td>The names of variables declared class constants
+                and of ANSI constants should be all uppercase with
+                words separated by underscores ("_").</td>
+                <td>static final int MIN_WIDTH = 4;</td>
+              </tr>
+              <tfoot>
+                  <td colspan="2">Courtesy of oracle, <a href="http://www.oracle.com/technetwork/java/codeconvtoc-136057.html">
+                    http://www.oracle.com/technetwork/java/codeconvtoc-136057.html</a><br><a href="http://www.oracle.com/technetwork/java/codeconventions-135099.html">
+                    http://www.oracle.com/technetwork/java/codeconventions-135099.html</a></td>
+              </tfoot>
+            </tbody>
+          </table>
+          </td>
+          </tr>
+        </table>
+        
         <!-- Scheme -->
-        <table id="scheme">
+        <table id="scheme" class="outer_table">
           <thead>
             <th>Scheme</th>
           </thead>
@@ -158,6 +306,126 @@
               <tfoot>
                   <td colspan="2">Courtesy of scheme.com, <a href="http://www.scheme.com/tspl2d/intro.html">
                     http://www.scheme.com/tspl2d/intro.html</a></td>
+              </tfoot>
+            </tbody>
+          </table>
+          </td>
+          </tr>
+        </table>
+        
+        <!-- Ruby -->
+        <table id="ruby" class="outer_table">
+          <thead>
+            <th>Ruby</th>
+          </thead>
+          <tr>
+          <td>
+          <table>
+            <thead>
+              <th>Convention</th>
+              <th>Example</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">Use two spaces per indentation level (aka soft tabs). No hard tabs.</td>
+              </tr>
+              
+              <tr>
+                <td>Prefer string interpolation instead of string concatenation:</td>
+                <td>email_with_name = "#{user.name} <#{user.email}>"</td>
+              </tr>
+              
+              <tr>
+                <td>
+                  Use def with parentheses when there are arguments.
+                  Omit the parentheses when the method doesn't accept any arguments.
+                </td>
+                <!-- FIX CODE, IT IS MESSING UP SIZING!!!!! -->
+               <!-- <td>
+                  <pre>
+                    <code>
+  def some_method
+     # body omitted
+   end
+
+   def some_method_with_arguments(arg1, arg2)
+     # body omitted
+   end
+                    </code>
+                  </pre>
+                </td>
+              </tr> -->
+              
+              <tr>
+                  <td colspan="2">Never use then for multi-line if/unless</td>
+              </tr>
+              <tr>
+                  <td colspan="2">Don't use parentheses around the condition of an if/unless/while</td>
+              </tr>
+              <tr>
+                  <td colspan="2">Avoid return where not required.</td>
+              </tr>
+              <tr>
+                <td>Use spaces around the = operator when assigning default values to method parameters</td>
+                <td>def some_method(arg1 = :default, arg2 = nil, arg3 = [])</td>
+              </tr>
+              <tfoot>
+                  <td colspan="2">Courtesy of Ruby Style guild, <a href="https://github.com/styleguide/ruby">
+                    https://github.com/styleguide/ruby</a></td>
+              </tfoot>
+            </tbody>
+          </table>
+          </td>
+          </tr>
+        </table>
+        
+        <!-- Python -->
+        <table id="python" class="outer_table">
+          <thead>
+            <th>Python</th>
+          </thead>
+          <tr>
+          <td>
+          <table>
+            <thead>
+              <th>Convention</th>
+              <th>Example</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">Block comments generally apply
+                to some (or all) code that follows them,
+                and are indented to the same level as that
+                code. Each line of a block comment starts with a # and a single space
+                (unless it is indented text inside the comment).</td>
+              </tr>
+              <tr>
+                <td>Imports should usually be on separate lines</td>
+                <td> import os<br>
+     import sys</td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                    <h2>Blank lines</h2>
+                  <ul>
+                    <li>Surround top-level function and class definitions with two blank lines.</li>
+                    <li>Method definitions inside a class are surrounded by a single blank line.</li>
+                    <li>Use blank lines in functions, sparingly, to indicate logical sections.</li>
+                  </ul>
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">Limit all lines to a maximum of 79 characters.</td>
+              </tr>
+              <tr>
+                  <td colspan="2">ways surround these binary operators with a single space on either side: assignment ( = )</td>
+              </tr>
+              <tr>
+                  <td colspan="2">While sometimes it's okay to put an if/for/while with a small body on the same line, never do this for multi-clause statements.</td>
+              </tr>
+              <tfoot>
+                  <td colspan="2">Courtesy of Python.org, <a href="https://www.python.org/dev/peps/pep-0008/">
+                    https://www.python.org/dev/peps/pep-0008/</a></td>
               </tfoot>
             </tbody>
           </table>

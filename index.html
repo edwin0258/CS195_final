@@ -15,44 +15,52 @@
     </script>
   <![endif]-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script type="text/javascript" src="scripts/language.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 <body>
-  <button class="nav_button"><img src="images/bars.png" alt="nav opening button" height="40"/></button>
+  
+  
+  
+  <!-- navbar always located at top of page -->
   <nav class="top_nav">
-    
     <div class="left_nav">
       <a href="index.html">Home</a>
     </div>
+    
     <div class="right_nav">
       <a href="nomanclature.html">Basic Nomanclature</a>
       <a href="repository.html">Language Repository</a>
       <a href="contact.html">Contact</a>
     </div>
   </nav>
+  
   <div class="wrapper">
     
     <header>
-      
+      <!-- for mobile use of navbar -->
+      <button class="nav_button">&#9776; Menu</button>
       <h1>Hello World</h1>
     </header>
     
     <div class="main">
+      
       <section class="popular">
+        
         <h2>Popular Languages</h2>
         <ul>
-          <li class="language"><a href="#">C</a></li>
-          <li class="language"><a href="scheme.html">Scheme</a></li>
+          <li class="language"><a href="c.html">C</a></li>
+          <li class="language"><a href="java.html">Java</a></li>
           <li class="language"><a href="javascript.html">JavaScript</a></li>
-          <li class="language"><a href="scheme.html">Scheme</a></li>
-          <li class="language"><a href="javascript.html">JavaScript</a></li>
-          <li class="options">
+          <li class="language"><a href="python.html">Python</a></li>
+          <li class="language"><a href="ruby.html">Ruby</a></li>
+          <ul class="options">
             <h2>More</h2>
-            <a href="repository.html" class="more">Repository</a>
-            <a href="repository.html" class="more">Nomanclature</a>
-          </li>
+            <li><a href="repository.html" class="more">Repository</a></li>
+            <li><a href="nomanclature.html" class="more">Nomanclature</a></li>
+          </ul>
         </ul>
       </section>
+      
       <section class="information">
         <div class="introduction topic">
           <h2>The Project</h2>
@@ -69,12 +77,15 @@
           language.</p>
         </div>
       </section>
+      
       <section class="images">
         <img class="image_one image" src="images/javascript.png" alt="javascript logo"/>
         <img class="image_two image" src="images/scheme.png" alt="scheme logo"/>
         <img class="image_three image" src="images/c.png" alt="c logo"/>
       </section>
+      
     </div>
+    
     <footer>
       <img src="images/logo.png" alt="Hello World Logo"/>
       <a href="index.html">Home</a>
@@ -85,6 +96,7 @@
         <i>Copyright &copy; 2016 Hello World</i>
       </p>
     </footer>
+    
   </div>
 </body>
 </html>

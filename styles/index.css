@@ -1,6 +1,6 @@
-* :not(title){
-  display:block;
-}
+@charset "utf-8";
+/* Author: Devin Miller */
+
 
 /* Basic Layout */
 .wrapper{
@@ -11,7 +11,6 @@
 }
 .popular{
   position:absolute;
-  float:left;
   width:150px;
   left:2%;
   top:0;
@@ -20,7 +19,6 @@
   border-left:5px solid rgba(0,0,0,.1);
   border-right:5px solid rgba(0,0,0,.1);
   padding:0px 25px 0px 25px;
-  
 }
 .information{
   width:50%;
@@ -33,6 +31,7 @@
   width:calc(25%);
   
 }
+
 /* Popular */
 .popular h2, .options h2{
   text-align:center;
@@ -46,13 +45,18 @@
   
   padding:0px 0px 0px 0px;
 }
+.popular li{
+  display:block;
+}
 .language a{
+  display:block;
   border-top:5px solid;
   background-color:white;
   margin-bottom:10px;
   text-align:center;
 }
 .popular .more{
+  display:block;
   padding:5px;
   margin-bottom:5px;
   text-align:center;
@@ -63,6 +67,7 @@
   font-weight:800;
   opacity:.9;
 }
+
 /* Topic */
 .topic{
   overflow:hidden;
@@ -104,6 +109,7 @@
   left:150px;
   transform:skew(5deg);
 }
+
 @media only screen and (max-width: 875px){
   .popular{
     padding:0px 0px 0px 10px;
@@ -116,13 +122,18 @@
     width:100%;
     overflow:hidden;
   }
+  .options{
+    display:none;
+  }
   .popular li{
+    box-shadow:none;
     width:100px;
     display:inline-block;
     
   }
   .popular .more{
     margin:0;
+    margin-top:0px;
     margin-left:20px;
     padding:0;
     box-shadow:none;

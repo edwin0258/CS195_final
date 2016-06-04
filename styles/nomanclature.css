@@ -1,13 +1,28 @@
+@charset "utf-8";
+/* Author: Devin Miller */
+
+.about{
+  overflow:hidden;
+  margin:20px 20px 40px 20px;
+  background:white;
+  box-shadow:inset 2px 2px rgba(0,0,0,.2),inset 100px 0px rgba(230,230,230,.13),
+  0px 0px 0px 10px rgba(200,200,200,.1), 4px 4px 10px rgba(0,0,0,.1);
+}
+.about h2{
+    text-align:left;
+    text-indent:10px;
+}
+.about p{
+    padding:10px 10px 10px 20px;
+}
+
+
 /* Table */
 table{
     width:100%;
     border:1px solid black;
     box-shadow:2px 2px rgba(0,0,0,.4);
     margin-bottom:10px;
-}
-caption{
-    border:1px solid black;
-    background-color:#DDDDDD;
 }
 thead{
     background-color:#DDDDDD;
@@ -24,7 +39,10 @@ td{
 }
 tfoot{
     text-align:center;
+    width:100%;
 }
+
+/* Nav area */
 .languages{
     width:100%;
     border:1px solid black;
@@ -33,9 +51,11 @@ tfoot{
     margin:20px 0px;
     box-shadow:2px 2px rgba(0,0,0,.2);
 }
-.languages h2{
+
+h2{
     text-align:center;
 }
+
 .languages a{
     background-color:white;
     border:1px solid black;
@@ -46,6 +66,8 @@ tfoot{
     display:inline-block;
     margin-bottom:20px;
 }
+
+
 @media only screen and (max-width: 430px){
     .main{
         overflow-x:scroll !important;
