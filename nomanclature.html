@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="styles/nomanclature.css"/>
   <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href="styles/print.css" media="print">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
@@ -56,7 +57,7 @@
         <div class="about">
           <h2>About</h2>
           <p>Each language has conventions and styling guilds,
-          this is a place mainly to find a good resource for the styling,
+          this is a place to find good resources for the styling,
           naming, and other conventions for a language.</p>
         </div>
         <!-- C -->
@@ -73,43 +74,41 @@
             </thead>
             <tbody>
               <tr>
-                <td>The "pointer" qualifier, '*', should be with the variable name rather than with the type.</td>
+                <td>The "pointer" qualifier, '*',
+                should be with the variable name rather than with the type.</td>
                 <td>char  *s, *t, *u;</td>
               </tr>
               <tr>
-                <td>Comments that describe data structures, algorithms, etc., should be in block comment form with the opening /*</td>
-                <!--<td><pre><code>
-   /*
-    * Here is a block comment.
-    * The comment text should be tabbed or spaced over uniformly.
-    * The opening slash-star and closing star-slash are alone on a line.
-    */</code></pre></td>-->
+                <td colspan="2">Comments that describe data structures, algorithms, etc.,
+                should be in block comment form with the opening /*</td>
+                
               </tr>
               <tr>
                   <td>
-                  <ul>
-                    <li>Put the opening bracket at the end of the first line.</li>
-                    <li>Use one space before the opening bracket.</li>
-                    <li>Put the closing bracket on a new line, without leading spaces.</li>
-                    <li>Do not end a complex statement with a semicolon.</li>
-                  </ul>
+                  Global variables should be prepended with a 'g_'.
                   </td>
                   <td>
-                      For Functions, loops, conditionals.
+                      Logger  g_log;
                   </td>
               </tr>
               <tr>
-                  <td colspan="2">For readability, avoid lines longer than 80 characters.</td>
+                  <td colspan="2">Structs are often nouns. By making function names verbs
+                  and following other naming conventions programs can be read more naturally.</td>
               </tr>
               <tr>
-                  <td colspan="2">use camelCase for identifier names (variables and functions).</td>
+                  <td colspan="2">Usually every function performs an action,
+                  so the name should make clear what it does: check_for_errors() instead of error_check(),
+                  dump_data_to_file() instead of data_file().
+                  This will also make functions and data objects more distinguishable.</td>
               </tr>
               <tr>
-                  <td colspan="2">All names start with a letter.</td>
+                  <td colspan="2">Don't use floating-point variables where discrete values are needed. </td>
               </tr>
               <tfoot>
-                  <td colspan="2">Courtesy of w3schools, <a href="https://www.doc.ic.ac.uk/lab/cplus/cstyle.html">
-                    https://www.doc.ic.ac.uk/lab/cplus/cstyle.html</a></td>
+                  <td colspan="2">Courtesy of <a href="https://www.doc.ic.ac.uk/lab/cplus/cstyle.html">
+                    https://www.doc.ic.ac.uk/lab/cplus/cstyle.html</a> <b>and</b>
+                    <a href="https://users.ece.cmu.edu/~eno/coding/CCodingStandard.html">
+                    https://users.ece.cmu.edu/~eno/coding/CCodingStandard.html</a></td>
               </tfoot>
             </tbody>
           </table>
@@ -148,14 +147,14 @@
                   </ul>
                   </td>
                   <td>
-                      For Functions, loops, conditionals.
+                      For functions, loops, conditionals.
                   </td>
               </tr>
               <tr>
                   <td colspan="2">For readability, avoid lines longer than 80 characters.</td>
               </tr>
               <tr>
-                  <td colspan="2">use camelCase for identifier names (variables and functions).</td>
+                  <td colspan="2">Use camelCase for identifier names (variables and functions).</td>
               </tr>
               <tr>
                   <td colspan="2">All names start with a letter.</td>
@@ -218,7 +217,8 @@
                   <td colspan="2">Put declarations only at the beginning of blocks.</td>
               </tr>
               <tr>
-                  <td colspan=>Class names should be nouns, in mixed case with the first letter of each internal word capitalized.</td>
+                  <td colspan=>Class names should be nouns,
+                  in mixed case with the first letter of each internal word capitalized.</td>
                   <td>class ImageSprite;</td>
               </tr>
               <tr>
@@ -233,9 +233,12 @@
                 <td>static final int MIN_WIDTH = 4;</td>
               </tr>
               <tfoot>
-                  <td colspan="2">Courtesy of oracle, <a href="http://www.oracle.com/technetwork/java/codeconvtoc-136057.html">
-                    http://www.oracle.com/technetwork/java/codeconvtoc-136057.html</a><br><a href="http://www.oracle.com/technetwork/java/codeconventions-135099.html">
-                    http://www.oracle.com/technetwork/java/codeconventions-135099.html</a></td>
+                  <td colspan="2">Courtesy of oracle,
+                    <a href="http://www.oracle.com/technetwork/java/codeconvtoc-136057.html">
+                    http://www.oracle.com/technetwork/java/codeconvtoc-136057.html</a><br>
+                    <a href="http://www.oracle.com/technetwork/java/codeconventions-135099.html">
+                    http://www.oracle.com/technetwork/java/codeconventions-135099.html</a>
+                  </td>
               </tfoot>
             </tbody>
           </table>
@@ -301,7 +304,8 @@
                   <td>#\a</td>
               </tr>
               <tr>
-                  <td colspan="2">Comments may appear on any line of a Scheme program, between a semicolon ( ; ) and the end of the line</td>
+                  <td colspan="2">Comments may appear on any line of a Scheme program,
+                  between a semicolon ( ; ) and the end of the line</td>
               </tr>
               <tfoot>
                   <td colspan="2">Courtesy of scheme.com, <a href="http://www.scheme.com/tspl2d/intro.html">
@@ -418,10 +422,11 @@
                   <td colspan="2">Limit all lines to a maximum of 79 characters.</td>
               </tr>
               <tr>
-                  <td colspan="2">ways surround these binary operators with a single space on either side: assignment ( = )</td>
+                  <td colspan="2">Always surround binary operators with a single space on either side: assignment ( = )</td>
               </tr>
               <tr>
-                  <td colspan="2">While sometimes it's okay to put an if/for/while with a small body on the same line, never do this for multi-clause statements.</td>
+                  <td colspan="2">While sometimes it's okay to put an if/for/while with a small body on the same line,
+                  never do this for multi-clause statements.</td>
               </tr>
               <tfoot>
                   <td colspan="2">Courtesy of Python.org, <a href="https://www.python.org/dev/peps/pep-0008/">

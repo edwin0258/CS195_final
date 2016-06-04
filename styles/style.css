@@ -85,14 +85,14 @@ header{
   position:relative;
   z-index:1;
   background-color:white;
-  overflow-x:hidden;
+  overflow:hidden;
   word-wrap:break-word;
 }
 
 footer{
   width:100%;
   background:linear-gradient(rgb(230,230,230),rgba(220,220,220,.5));
-  overflow:auto;
+  overflow-y:auto;
 }
 
 footer a{
@@ -135,13 +135,13 @@ footer img{
 
 @media only screen and (max-width: 850px){
   .top_nav{
-    height:20px;
+    height:30px;
   }
   header{
     margin-left:0;
   }
   .top_nav a{
-    padding:0px;
+    padding:5px;
   }
   .main{
     background:white;
@@ -169,11 +169,12 @@ footer img{
   .top_nav a{
     background:none;
     margin:0;
-    display:block;
     padding:10px;
-    background-color:rgba(100,100,100,.5);
-    border-bottom:2px solid rgba(0,0,0,.3);
+    background-color:rgb(200,200,200);
     width:100%;
+  }
+  .top_nav a:hover{
+    background-color:rgb(150,150,150);
   }
   .left_nav, .right_nav{
     width:100%;

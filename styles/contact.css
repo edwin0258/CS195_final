@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* Author: Devin Miller */
 
-.main .contact_info, .main .contact_container{
+.contact_info,.contact_container{
   display:inline-block;
   overflow:hidden;
 }
@@ -9,7 +9,9 @@ h2{
   background-color:rgba(0,0,0,.1);
   margin:0px;
   margin-bottom:50px;
+  text-align:center;
 }
+
 /* Contact Info Section */
 .contact_info{
   float:left;
@@ -20,9 +22,7 @@ h2{
   
   
 }
-.contact_info h2{
-  margin-top:0px;
-}
+
 .contact_container{
     font-size:14px;
     width:80%;
@@ -32,9 +32,8 @@ h2{
     box-shadow:inset 0px 0px 0px 5px rgba(0,0,0,.1),4px 4px 5px rgba(0,0,0,.3);
     word-wrap:break-word;
     border:1px solid rgba(0,0,0,.5);
-}
-.contact_container:hover{
-  opacity:.8;
+    -webkit-transition: 1s all;
+    transition:1s all;
 }
 
 .contact_container img{
@@ -43,21 +42,28 @@ h2{
   box-shadow:2px 2px rgba(0,0,0,.4), 0px 0px 0px 5px rgba(0,0,0,.1);
   border:1px solid rgba(0,0,0,.1);
 }
+
+.contact_container:hover{
+  content:"Coming Soon";
+  color:white;
+  background-color:black;
+  -webkit-transition: 1s all;
+  transition:1s all;
+  opacity:.8;
+}
+
 /* Comment Section */
 .comment{
   position:absolute;
   top:5px;
-  bottom:0;
+  height:calc(100% - 50px);
   padding-bottom:30px;
   border-top:10px solid #FF6961;
   margin-left:calc(20vw + 70px);
-  
   text-align:center;
   background-color:rgba(0,0,0,.04);
-  box-shadow:2px 2px 10px rgba(0,0,0,.2);
-  
-  
 }
+
 textarea{
   width:80%;
   border:2px solid rgba(0,0,0,.4);
@@ -67,6 +73,7 @@ textarea{
   margin:10px auto 0px auto;
   width:400px;
   height:40px;
+  margin-left:0;
   background-color:#ff6961;
   border:none;
   cursor:pointer;
@@ -77,16 +84,17 @@ textarea{
 .button:hover{
   -webkit-transition: .5s all;
   transition:.5s all;
+  margin-left:4px;
   box-shadow:1px 1px 0px rgba(0,0,0,.2);
   background-color:#ff9961;
 }
+
 /*Images */
 .images{
   position:absolute;
   right:0;
-  top:50px;
+  top:0px;
   width:calc(25%);
-  
 }
 .images img{
   height:125px;
@@ -97,7 +105,6 @@ textarea{
   transform:rotate(20deg);
 }
 .image_two{
-  
   float:left;
   margin-left:20px;
   margin-top:-50px;
@@ -109,6 +116,7 @@ textarea{
   left:150px;
   transform:skew(5deg);
 }
+
 @media only screen and (max-width: 1100px){
   .images{
     display:none;

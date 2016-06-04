@@ -23,7 +23,6 @@ ul{
 }
 .resources li{
     margin:10px;
-    
 }
 
 
@@ -77,6 +76,7 @@ samp{
     font-weight:bold;
     position:relative;
     display:block;
+    
     background: -webkit-radial-gradient(bottom left,rgba(193,39,45,1),rgba(193,39,45,.8),rgba(193,39,45,.7));
     background: radial-gradient(at bottom left,rgba(193,39,45,1),rgba(193,39,45,.8),rgba(193,39,45,.5));
 }

@@ -1,14 +1,7 @@
 @charset "utf-8";
 /* Author: Devin Miller */
 
-
-/* Basic Layout */
-.wrapper{
-  padding:0px;
-  margin:0px;
-  box-shadow:2px 4px 10px rgba(0,0,0,.2);
-  
-}
+/* Popular */
 .popular{
   position:absolute;
   width:150px;
@@ -20,19 +13,6 @@
   border-right:5px solid rgba(0,0,0,.1);
   padding:0px 25px 0px 25px;
 }
-.information{
-  width:50%;
-  margin:0 auto;
-}
-.images{
-  position:absolute;
-  right:0;
-  top:0;
-  width:calc(25%);
-  
-}
-
-/* Popular */
 .popular h2, .options h2{
   text-align:center;
   font-size:12px;
@@ -42,8 +22,7 @@
   margin-top:70px;
 }
 .popular ul{
-  
-  padding:0px 0px 0px 0px;
+  padding:0px;
 }
 .popular li{
   display:block;
@@ -68,11 +47,14 @@
   opacity:.9;
 }
 
-/* Topic */
+/* Information */
+.information{
+  width:50%;
+  margin:0 auto;
+}
 .topic{
   overflow:hidden;
   margin:20px 20px 40px 20px;
-  background:white;
   box-shadow:inset 2px 2px rgba(0,0,0,.2),inset 100px 0px rgba(230,230,230,.13),
   0px 0px 0px 10px rgba(200,200,200,.1), 4px 4px 10px rgba(0,0,0,.1);
 }
@@ -88,6 +70,12 @@
 }
 
 /* Images */
+.images{
+  position:absolute;
+  right:0;
+  top:0;
+  width:calc(25%);
+}
 .images img{
   height:125px;
 }
@@ -97,7 +85,6 @@
   transform:rotate(20deg);
 }
 .image_two{
-  
   float:left;
   margin-left:20px;
   margin-top:-50px;
@@ -114,10 +101,8 @@
   .popular{
     padding:0px 0px 0px 10px;
     position:relative;
-    display:block;
     left:0;
     border:none;
-    margin-left:0;
     margin-bottom:50px;
     width:100%;
     overflow:hidden;
@@ -125,11 +110,11 @@
   .options{
     display:none;
   }
+  
   .popular li{
     box-shadow:none;
     width:100px;
     display:inline-block;
-    
   }
   .popular .more{
     margin:0;
@@ -139,14 +124,17 @@
     box-shadow:none;
     background-color:white;
   }
+  
   .images{
     display:none;
   }
+  
   .information{
-    clear:left;
+    display:block;
     width:100%;
   }
 }
+
 @media only screen and (max-width: 580px){
   .popular{
     display:none;
