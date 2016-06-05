@@ -107,7 +107,7 @@
     width:100%;
     overflow:hidden;
   }
-  .options{
+  .options,.more_options{
     display:none;
   }
   
